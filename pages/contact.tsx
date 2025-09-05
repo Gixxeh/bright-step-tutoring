@@ -5,7 +5,7 @@ export default function Contact() {
       <p className="mb-4">We’d love to hear from you! Reach us via:</p>
       <ul className="space-y-2">
         <li>📧 Email: <a href="mailto:brightsteptutoring@gmail.com" className="text-blue-600">brightsteptutoring@gmail.com</a></li>
-        <li>📱 Phone: +234-XXX-XXX-XXXX</li>
+        <li>📱 Phone: +234-9124083989</li>
         <li>🌐 Website: bright-step-tutoring.vercel.app</li>
       </ul>
 
