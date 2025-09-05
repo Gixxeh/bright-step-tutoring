@@ -78,10 +78,10 @@ export default function Home() {
           📧 Email: brightsteptutoring@gmail.com
         </p>
         <p style={{ fontSize: "1.1rem", marginBottom: "10px" }}>
-          📞 Phone: +234 801 234 5678
+          📞 Phone: +234 912 408 3989
         </p>
         <p style={{ fontSize: "1.1rem" }}>
-          📍 Location: Abuja, Nigeria
+          📍 Location: Zaria, Nigeria
         </p>
       </section>
     </div>
