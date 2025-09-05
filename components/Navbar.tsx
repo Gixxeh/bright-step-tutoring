@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,8 +10,18 @@ export default function Navbar() {
   return (
     <nav className="bg-blue-600 text-white shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+        
         {/* Logo / Brand */}
-        <h1 className="text-xl font-bold">Bright Step Tutoring</h1>
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src="/logo.png"   // must be inside /public folder
+            alt="Bright Step Tutoring"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
+          <span className="text-xl font-bold">Bright Step Tutoring</span>
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
@@ -25,7 +36,6 @@ export default function Navbar() {
           className="md:hidden focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {/* 3 lines icon */}
           <svg
             className="w-6 h-6"
             fill="none"
