@@ -24,11 +24,19 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6">
+        <ul className="hidden md:flex space-x-6 items-center">
           <li><Link href="/">Home</Link></li>
           <li><Link href="/about">About</Link></li>
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/contact">Contact</Link></li>
+          <li>
+            <Link
+              href="/login"
+              className="bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition"
+            >
+              Login
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile Hamburger */}
@@ -69,6 +77,15 @@ export default function Navbar() {
           <li><Link href="/about" onClick={() => setIsOpen(false)}>About</Link></li>
           <li><Link href="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
           <li><Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+          <li>
+            <Link
+              href="/login"
+              onClick={() => setIsOpen(false)}
+              className="bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition text-center"
+            >
+              Login
+            </Link>
+          </li>
         </ul>
       )}
     </nav>
